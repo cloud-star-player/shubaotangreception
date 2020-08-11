@@ -1,0 +1,207 @@
+page {
+    background: #efefef;
+  }
+  /* pages/fenlei/fenlei.wxss */
+  
+  .top {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20rpx;
+  }
+  
+  .top icon {
+    display: flex;
+    align-items: center;
+  }
+  .left{
+    width: 33.33%;
+  }
+  .center {
+    width: 33.33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    border-radius: 10rpx;
+    padding: 0 20rpx;
+  }
+  .right{
+    width: 33.33%;
+    text-align: right;
+    padding-right: 10rpx;
+  }
+  .guanli{
+    color:#037D6E;
+  }
+  .iconfont {
+    color: black;
+    font-size: 45rpx;
+  }
+  
+  
+  
+  
+  .cartsselect {
+    margin-top: 10rpx;
+    margin-right: 10rpx;
+    width: 39rpx;
+    height: 39rpx;
+  }
+  
+  .history {
+    background: white;
+    margin-bottom: 30rpx;
+    border-radius: 2rem;
+    width: 100%;
+  }
+  
+  .price {
+    color: #f60;
+  }
+  
+  .num {
+    color: #989699;
+  }
+  
+  .historycnt {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .historysubtitle {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+  
+  .historytitle {
+    margin: 0 auto;
+    word-break: break-all;
+    width: 350rpx;
+    font-size: 23rpx;
+  }
+  
+  
+  .historylist {
+    padding: 0 20rpx;
+  }
+  
+  .historylist .historyitem {
+    border-radius: 2rpx;
+    border-bottom: 1rpx solid #e3e3e3;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rpx 10rpx;
+    width: 100%;
+    position: relative;
+  }
+  
+  .historyitem:nth-child(1) {
+    border-top: 0;
+  }
+  
+  .historyitem .historycnt {
+    flex: 1;
+    padding: 0 20rpx;
+  }
+  
+  .historycnt .historyimage {
+    float: left;
+    margin-right: 20rpx;
+    width: 164rpx;
+    height: 164rpx;
+  }
+  
+  .historyinfo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+  }
+  
+  .historytitle {
+    font-size: 25rpx;
+  }
+  
+  .historybutton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .historytotal {
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+    margin-right: 36rpx;
+  }
+  
+  .button {
+    margin-right: 12rpx;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .button view {
+    margin-right: 12rpx;
+    width: 150rpx;
+    text-align: center;
+    border-radius: 2rem;
+  }
+  
+  .button view text {
+    font-size: 24rpx;
+    line-height: 80rpx;
+  }
+  
+  .buttonown {
+    border: 1rpx solid #A9A6AA;
+    border-radius: 4rpx;
+    background: white;
+  }
+  
+  .buttonown text {
+    color: #7A777B;
+  }
+  
+  .buttontwo {
+    border: 1rpx solid #037D6E;
+    border-radius: 4rpx;
+    background: #037D6E;
+  }
+  
+  .buttontwo text {
+    color: white;
+  }
+  
+  @font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1596436493223'); /* IE9 */
+    src: url('iconfont.eot?t=1596436493223#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAKAAAsAAAAABiAAAAI2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAooSAE2AiQDCAsGAAQgBYRtBzEbbwUR1Yshsj9AJrc6DgBJqwXTJOYwLvJWBsy6tETlf1AprIIEAAAAAIiH/9/v1z7vXlSTamLRRZtKJpEISTxBpDSdPqHMhGRRLOQPE7l5mGkicsPnf/3A4pzVNSpCjeQ9kEJfSLvitiwnIe374eXrUnZW37dCQ9PfAKiDIZ/ncnoT6EDuqg+UyxiDxpo0aQD14oAC3AujyAok9IaxC17gYwLVukyIhd3lLipl9qpAnASvRGUhIsssXymUNxzM4lGZyuK++MRD9P34OxmVFMoSu2nteGvFzA9OUWelM0cBIUpAx8uQMIFMbDVmViTBuKQ6k/VxrPrgBwK3OKpDsL/Orq0FHTAb/OCtFKCAx6IM1k26gCg/9A+L9/9P9cSRBfPNgNJZausM/Sr4cEdXksGXrShUOsuG+ajczht8v2pgXzY0tqvImqpxtFB+3JZq1SjBgWbfp1rbLlYIldom+Cp0ZkgqDZCZnUCZGlMoV2ka1cYtH6/R4lQSuQpjrgFCo2cU6n1E0ugzmdlvKNPuP8o1RkK1nfDCGkPBBZlQMVrQPwhmqs71sIzrr+hfWVFeE/FPpDXEoW+6cn6PFWmJLevbD8wOHE0FduA5zHmCmaaIhpuRed60rWt6U2OmIqSEitGC/kEwU3XBeJaVz1/Rv7Kijp669BNpDdND33QDyL2xDup5lFfWtx+YHTiaCuzAPMx5grl5XkTDzTghNW9aZ5gbamy2N5e/OwHVbFsRzszEsarjKwxCAA==') format('woff2'),
+    url('iconfont.woff?t=1596436493223') format('woff'),
+    url('iconfont.ttf?t=1596436493223') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1596436493223#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-fanhui2:before {
+    content: "\e60a";
+  }
+  
+  

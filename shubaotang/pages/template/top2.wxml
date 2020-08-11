@@ -1,0 +1,21 @@
+<template name="tfooter">
+  <view class="footer-buffer"></view>
+  <view class="footer">
+    <view class="footers">
+      <view class="footers-right" bindtap="shoucang">
+        <icon class="iconfont {{shoucang ? 'icon-collection-b':'icon-shoucang'}}"></icon>
+        <text>收藏</text>
+      </view>
+      <view bindtap="toshoppings">
+        <icon class="iconfont icon-gouwuche"></icon>
+        <text>购物车</text>
+      </view>
+    </view>
+    <view class="shopping" bindtap="toshopping">
+      加入购物车
+    </view>
+    <view class="purchase" bindtap="showModal">
+      立刻购买
+    </view>
+  </view>
+</template>

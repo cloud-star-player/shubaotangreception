@@ -1,0 +1,64 @@
+@import "../template/top.wxss";
+.top1 input {
+    background: #efeeee;
+    height: 70rpx;
+    width: 560rpx;
+    border-radius: 10rpx;
+    padding-left: 25rpx;
+  }
+  
+  .top1 {
+    width: 571rpx;
+    height: 70rpx;
+    display: flex;
+    background: #efeeee;
+    align-items: center;
+    border-radius: 10rpx;
+  }
+  
+  .top view icon {
+    color: #b7bbbb;
+    font-size: 40rpx;
+    padding: 10rpx;
+  }
+  
+  .top {
+    z-index: 999;
+    top:0;
+    position: fixed;
+    width: 100%;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .placeholderStyle {
+    color: #b7bbbb;
+  }
+  .search {
+    border: 4rpx solid #b7bbbb;
+    border-radius: 10rpx;
+    padding:10rpx 30rpx;
+    color: #b7bbbb;
+  }
+  page {
+    background: #f5f5f5;
+  }
+  .tops{
+    margin-top: 90rpx;
+  }
+.search_text{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row;
+    flex-flow: wrap;
+}
+.search_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

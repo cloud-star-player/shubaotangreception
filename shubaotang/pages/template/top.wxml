@@ -1,0 +1,39 @@
+<template name="input">
+<view class="top">
+  <view class="top1">
+    <icon class="iconfont icon-fangdajing" />
+    <input type="text" name="shop" placeholder="搜索商品" placeholder-class="placeholderStyle" />
+  </view>
+  <view class="search">搜索</view>
+</view>
+<view class="tops"></view>
+</template>
+<template name="list">
+<view class="bottom">
+  <view class="chas" wx:for="{{bottom}}" wx:key="index">
+    <view class="cha" bindtap="detail">
+      <image src="{{item.imgurl}}"></image>
+      <text class="cha_t">{{item.text}}</text>
+      <view class="cha_2">
+        <text class="cha_t1">{{item.price}}</text>
+        <icon class="iconfont icon-gouwuche" />
+      </view>
+    </view>
+  </view>
+</view>
+</template>
+
+<template name="list">
+<view class="bottom">
+  <view class="chas" wx:for="{{shoplist}}" wx:key="index">
+    <view class="cha" bindtap="detail">
+      <image src="{{item.imgurl}}"></image>
+      <text class="cha_t">{{item.text}}</text>
+      <view class="cha_2">
+        <text class="cha_t1">{{item.price}}</text>
+        <icon class="iconfont icon-gouwuche" />
+      </view>
+    </view>
+  </view>
+</view>
+</template>

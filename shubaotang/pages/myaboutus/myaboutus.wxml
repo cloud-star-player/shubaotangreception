@@ -1,0 +1,9 @@
+<view class="title">
+   <text style="font-weight:bold;">北京蜀宝堂</text>
+</view>
+<view>
+   <text decode="{{true}}" style="line-height: 30rpx;">
+   &emsp;&emsp;北京蜀宝堂在京已开老店二十余年，许多老客户每次都要跑到店里来购物，还有许多是外地大老远而来，因为交通疫情等各方面因素问题造成诸多不便
+   &emsp;&emsp;基于以上用户需求和存在问题，在北京蜀宝堂“网上购物咨询”功能，基于微信小程序，做一个电商平台，抓住电商的特点，做出特色，与微信集成，实现商品的个性化营销。
+   </text>
+</view>

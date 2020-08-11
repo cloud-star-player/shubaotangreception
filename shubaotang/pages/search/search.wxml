@@ -1,0 +1,31 @@
+<import src="../template/top.wxml" />
+<view class="top">
+	<view class="top1">
+		<input value="{{title}}" bindinput="search" type="text" name="shop" placeholder="搜索商品" placeholder-class="placeholderStyle" />
+	</view>
+	<view class="search" bindtap="searchs">搜索</view>
+</view>
+<view class="tops"></view>
+<view wx:if="{{shoplist.length==0}}">
+<view style="margin-top:200rpx;width:100%;" class="search_title">
+	<view style="color:black;margin-left:50rpx;">
+		历史记录
+	</view>
+	<view style="color:#BCBBBB;margin-right:50rpx;" bindtap="search_deleteall">
+		全部删除
+	</view>
+</view>
+<view class="search_text">
+	<span style="padding:30rpx;margin:20rpx; background:#EFEEEE;color:#BCBBBB;border-radius:3rem ;" wx:for="{{search_text}}" wx:key="{{index}}" data-index="{{item.id}}" bindlongpress="search_delete" bindtap="hot_click" data-index="{{item.title}}">{{item.title}}</span>
+</view>
+<view style="margin-top:100rpx;width:100%;" wx:if="{{search_text.length==0}}"></view>
+<view>
+	<view style="color:black;margin-left:50rpx;">
+		热门搜索
+	</view>
+</view>
+<view class="search_text">
+	<span style="padding:30rpx;margin:20rpx; background:#EFEEEE;color:#BCBBBB;border-radius:3rem;" wx:for="{{search_hot}}" bindtap="hot_click" data-index="{{item}}">{{item}}</span>
+</view>
+</view>
+<template is="list" data="{{shoplist}}" wx:if="{{shoplist.length!=0}}"></template>

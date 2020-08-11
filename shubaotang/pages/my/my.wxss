@@ -1,0 +1,255 @@
+/* pages/my/my.wxss */
+.top {
+  width: 100%; 
+  height: 216rpx;  
+  border-color: #b9cbcc transparent transparent transparent;
+  border-radius: 0 0 10px 10px ;
+  background: #b9cbcc;
+  margin-bottom: 135rpx;
+}
+page{
+  background: #efefef;
+}
+.card{
+  z-index: 999;
+  margin: auto;
+  position:absolute;
+  left:0;
+  right: 0;
+  top:60rpx;
+  border-radius:5rem; 
+  /*微调*/  
+  width: 90%;
+  padding: 69rpx 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_user image{
+  width: 97rpx;
+  height: 97rpx;
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  flex-flow: row-wrap;
+  margin-right:30rpx; 
+  box-shadow: 0.1875rem 0.1875rem 0.3125rem #333;
+}
+.card_user{
+  margin-left:30rpx; 
+  display: flex;
+  align-items: center;
+  flex-flow: row-wrap;
+}
+.member{
+  border-radius:50px; 
+  width: 190rpx;
+  height: 68rpx;
+  margin-right:30rpx; 
+  display: flex;
+  align-items: center;
+  flex-flow: row-wrap;
+  background: #4d515a;
+  justify-content: space-between;
+}
+.member icon{
+  margin-left:10rpx; 
+  font-size: 50rpx;
+  color: #fff;
+}
+.member text{
+  margin-right:10rpx; 
+  color: #fff;
+  font-size: 20rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom:20rpx; 
+}
+
+.my_order{
+  background: white;
+  padding-bottom: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 20rpx solid #eee;
+}
+
+.my_order_text1 {
+  margin-left: 24rpx;
+  color: #616161;
+}
+
+.my_order_text2{
+  margin-right: 24rpx;
+  color: #9c9c9c;
+  font-size: 28rpx;
+}
+.my_list{
+  width:100%;
+  background: white;
+  margin-top: 40rpx;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-bottom: 20rpx solid #eee;
+}
+.my_list view{
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.my_list view icon{
+  color: #989898;
+  font-size: 54rpx;
+}
+.my_list view text{
+  color: #989898;
+  font-size: 25rpx;
+}
+/* .my{
+  margin-top: 40rpx;
+  padding-bottom: 40rpx;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-bottom: 20rpx solid #eee;
+} */
+
+.bottom {
+  margin-top:50rpx; 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.bottom view {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.bottom view view icon {
+  font-size: 54rpx;
+  color: white;
+}
+
+.bottom view view {
+  margin-bottom: 25rpx;
+  box-shadow: 0.1875rem 0.1875rem 0.3125rem #333;
+  width: 86rpx;
+  height: 86rpx;
+  border-radius: 5px;
+  /*只需要在父元素上加这三句*/
+  justify-content: center; /*子元素水平居中*/
+  align-items: center; /*子元素垂直居中*/
+  display: -webkit-flex;
+}
+
+.b1 {
+  background: #ef5b2b;
+}
+.b2 {
+  background: #ef274c;
+}
+.b3 {
+  background: #f1ac2b;
+}
+.b4 {
+  background: #a7bd2c;
+}
+.b5 {
+  background: #f27197;
+}
+.bottom view text {
+  font-size: 26rpx;
+}
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1596078374895'); /* IE9 */
+  src: url('iconfont.eot?t=1596078374895#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+  url('iconfont.woff?t=1596078374895') format('woff'),
+  url('iconfont.ttf?t=1596078374895') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1596078374895#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 待付款 */
+.icon-daifukuan:before {
+  content: "\e603";  
+}
+/* 积分 */
+.icon-jifen:before {
+  content: "\e636";
+}
+/* 关于我们 */
+.icon-guanyuwomen:before {
+  content: "\e605";
+}
+
+
+/* 收货地址 */
+.icon-shouhuodizhi:before {
+  content: "\e657";
+}
+/* 我的收藏 */
+.icon-wodeshoucang:before {
+  content: "\e6ca";
+}
+/* 待发货 */
+.icon-daifahuo:before {
+  content: "\e63f";
+}
+/* 退货退款 */
+.icon-tuihuotuikuan:before {
+  content: "\e7af";
+}
+/* 加盟 */
+.icon-jiameng:before {
+  content: "\e63b";
+}
+/* 历史 */
+.icon-lishi:before {
+  content: "\e75f";
+}
+/* 联系客服 */
+.icon-wode-lianxikefu:before {
+  content: "\e622";
+}
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1596078598902'); /* IE9 */
+  src: url('iconfont.eot?t=1596078598902#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANAAAsAAAAABxwAAALyAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqCHIILATYCJAMICwYABCAFhG0HORs6BsgOJcHAwADQggFAPPz/Wrtv5q9qQi3SPYvGTRwSIWrGY6MkEt1L4P/yqp/OMBmjBsZSI1el06p4oPSCZ/kE+Cqf8O7Cdft/jpkugQaSH2gu2UF7Axwl0ACjikYnegeEN4xd8ALPE6iakI/ZXbh8PfhJ7GmBuBSFYfArOCSJhctCsWFtgngFb+Vsh+Up8BL9ffwpDT+QKeRgZx1cLBiD5s9LThRrekx9AQKYy+nANpFjDUjESWNgDysYjlUNeJkBx0oPPi95PIFKHPWfJ4pgp9bBGGQ8E9NjPWpRBpJnD42AK4xNP1qYDAkNDJ1mjryuDLn6MgEOv6rgvcx7GYGP3jd8+NDpft/I3HgzxbjP8KG7TgHcneRCdp6efPt2/fv3HV05u97l7I689a6jtKdZELAninXC4/Xu0ztPRsDuUzy/60w2nOOaLcfn/DrMZrPDL3qYsSSsf7hqYqplCUxmJ05YJptLnTceSx11P3PmgsKCmj0WzK5m/sTA3NwA41ADJTOQjctaEHMtNWUgt+vzl7GHVCQVhcD/Bw4czpgLCo0PDTwW6GUEhSaEBpm3skYQ9/KbweD6f378xds+Fvf6RBP+zQT5HYDynRmDP8wc2JAMtq3MksZsjGRGvO+8rKqKf8CWrk9TJYPXiYSywUuZSsYzyJXNIRN2DQpq1qGobAOqVi3aXNOjYEXyB1ZsARDaLkCm6Q1ybc+QCfsRCoa+QVE7WKg6i/A9axZC5NoUPKzhMTQyicRR6iKuWuPi9LVY0B3DSp4d4TuwoopuVFJYXA4vwi6sLLFANYRSTSOIKNSJFoLLsMNBkaRQGx7VCq2aJtUWFZGmLxWOUidwdiiwYRpsDDJiEiIaRbmQoLWGq/z+WphA5zBM6airU3bAFCpxcKREoeIByEUC16C6R/lEZRCU0mgIhFBQTshCoMMcToBCpOZRNtgoTSHrBJ+kVhFqRoYKCrcXOf9uH1TZ0iyco1honQ+LqpXqVp0SfQS7AAAAAA==') format('woff2'),
+  url('iconfont.woff?t=1596078598902') format('woff'),
+  url('iconfont.ttf?t=1596078598902') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1596078598902#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 待收货 */
+.icon-daishouhuofuben:before {
+  content: "\e6b1";
+}
+
+
+
+

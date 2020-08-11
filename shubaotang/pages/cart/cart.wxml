@@ -1,0 +1,53 @@
+<block wx:if='{{hasList}}'>
+	<view class="cartslist">
+		<view wx:for="{{carts}}" wx:key='cart' wx:item='item' class="carts">
+			<view class="cartsitem">
+				<view class="cartsradio">
+					<image class="cartsselect" bindtap="bindCheckbox" data-index="{{index}}" src="{{item.isSelect?'../images/cart/select.png':'../images/cart/n_select.png'}}" />
+				</view>
+				<view class="cartscnt">
+					<image class="cartsimage" src="{{item.imgurl}}" />
+					<view class="cartsinfo">
+						<view class="clamp2">{{item.goods_name}}</view>
+						<view class="cartssubtitle">
+							<text class="price">￥{{item.price}}</text>
+						</view>
+					</view>
+				</view>
+				<!-- //数量加减 -->
+				<view class="adds">
+					<view class="add">
+						<text bindtap="bindMinus" data-index='{{index}}'>-</text>
+						<input type="number" name="price" bindinput="bindIptCartNum" data-index='{{index}}' value="{{item.num}}"></input>
+						<text data-index='{{index}}' bindtap="bindPlus">+</text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view style="width:100%;height:100rpx"></view>
+	<view class="cartsfooter">
+		<view class="bottomfixed">
+			<view class="inner">
+				<view class="chkAll" bindtap="bindSelectAll">
+					<image class="allselect" src="{{selectAllStatus?'../images/cart/select.png':'../images/cart/n_select.png'}}" />
+					<text>全选</text>
+				</view>
+				<text style="color:#f60" wx:if="{{deleteAllStatus}}" bindtap="delectsuccess">删除</text>
+				<text style="color:black" wx:else="{{!deleteAllStatus}}" bindtap="delectfalse">删除</text>
+				<view class="total">总计：
+					<em>￥{{totalMoney}}</em>
+				</view>
+				<view wx:if="{{totalCount != 0}}" class="btn-pay" bindtap='jiesuan'>结算({{totalCount}})</view>
+				<view wx:else class="btn-pay disabled" >结算({{totalCount}})</view>
+			</view>
+		</view>
+	</view>
+</block>
+<block wx:else>
+	<view class="content">
+		<view style="margin-top:50px;width:100%;">
+			<view style='font-size:15px;'>购物车没有商品!</view>
+		</view>
+	</view>
+</block>

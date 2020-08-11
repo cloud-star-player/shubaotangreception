@@ -1,0 +1,21 @@
+<import src="../template/top.wxml" />
+<view bindtap="tosearch">
+<template is="input"></template>
+</view>
+<view class="midden" style="height:{{theight}}px;">
+	<view class="swiper-tab" style="height:{{theight}}px;">
+		<view class="tab-item {{currentTab==index ? 'on' : ''}}" data-current="{{index}}" bindtap="swichNav" wx:for="{{arr}}" wx:key="index">{{item.tab}}</view>
+	</view>
+	<swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style="height:{{theight}}px;" vertical="true">
+		<swiper-item wx:for="{{arr}}" wx:key="index">
+			<scroll-view scroll-y style="height:{{theight}}px;" bindscrolltolower="loadMore">
+				<view class="content">
+					<view class="type">{{currenttext}}</view>
+					<view class="text-tab" style="height:{{theight}}px;">
+						<view class="text-item" wx:for="{{types}}" wx:key="index" wx:if="{{item.type-1==currentTab}}" data-classsearch="{{item.text}}" bindtap="toclasssearch">{{item.text}}</view>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+	</swiper>
+</view>

@@ -1,0 +1,25 @@
+<scroll-view scroll-y style="height:{{swiperheight2}}px;" bindscrolltolower="loadMore2">
+	<view class="refundlist">
+		<view class="refund" wx:for="{{refundorder}}" wx:key="index" wx:for-item="refundorder">
+			<view class="refunditem" wx:for="{{shoplist}}" wx:key="index" wx:for-item="shoplist" wx:if="{{shoplist.id==refundorder.id}}">
+				<view class="refundcnt">
+					<image class="refundimage" src="{{shoplist.image}}" />
+					<view class="refundinfo">
+						<text class="refundtitle">{{shoplist.title}}</text>
+						<view class="refundsubtitle">
+							<text class="price">￥{{shoplist.price}}</text>
+							<text class="num">x {{shoplist.num}}</text>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="refundbutton">
+				<text class="refundtotal">共12件  应付总额:<text style="color:#f60;">￥12.00</text></text>
+				<view class="button">
+					<view class="buttonown"><text>取消定单</text></view>
+					<view class="buttontwo"><text>立即付款</text></view>
+				</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>

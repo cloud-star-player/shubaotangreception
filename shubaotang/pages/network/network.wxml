@@ -1,0 +1,5 @@
+<view>
+  <image src="../images/network/network1.png" class="im1" />
+  <image src="../images/network/network2.png" class="im2" />
+  <text>网络走丢了...</text>
+</view>

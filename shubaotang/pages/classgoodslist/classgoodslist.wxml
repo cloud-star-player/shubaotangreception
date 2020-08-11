@@ -1,0 +1,3 @@
+<import src="../template/top.wxml" />
+<template is="input"></template>
+<template is="list" data="{{shoplist}}"></template>

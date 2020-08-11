@@ -1,0 +1,94 @@
+.top1 input {
+  background: #efeeee;
+  height: 70rpx;
+}
+
+.top1 {
+  width: 571rpx;
+  height: 70rpx;
+  display: flex;
+  background: #efeeee;
+  align-items: center;
+  border-radius: 10rpx;
+}
+
+.top view icon {
+  color: #b7bbbb;
+  font-size: 40rpx;
+  padding: 10rpx;
+}
+
+.top {
+  z-index: 999;
+  top:0;
+  position: fixed;
+  width: 100%;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.placeholderStyle {
+  color: #b7bbbb;
+}
+.search {
+  border: 4rpx solid #b7bbbb;
+  border-radius: 10rpx;
+  padding:10rpx 30rpx;
+  color: #b7bbbb;
+}
+
+.tops{
+  margin-top: 90rpx;
+}
+/*list使用*/
+
+.cha{
+  padding: 10rpx;
+  margin: 0 auto;
+  width: 312rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #fff;
+  align-items: center;
+}
+.cha image{
+  width:312rpx;
+  height: 235rpx;
+
+}
+.bottom{
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+.cha_2 icon{
+  color:red;
+}
+.cha_t {
+  margin: 0 auto;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  width: 287rpx;
+}
+.cha_2{
+  width: 100%;
+  margin: auto;
+  flex-flow: row-wrap;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.cha_t1{
+  font-size: 30rpx;
+  color: red;
+}
+.chas{
+  width: 49%;
+  margin: 12rpx 0rpx;
+}

@@ -1,0 +1,79 @@
+<!--pages/my/my.wxml-->
+<view class="top">
+</view>
+<view class="card">
+  <view class="card_user">
+    <image src="../images/my/my_04.jpg"></image>
+    <text class="card_name">高三岁</text>
+  </view>
+  <view class="member">
+    <icon class="iconfont icon-jifen"> </icon>
+    <text>
+      200积分
+    </text>
+  </view>
+</view>
+<view class="my_order">
+  <text class="my_order_text1">
+我的订单
+</text>
+  <text class="my_order_text2" data-currentTab="0" bindtap="mylogistics">
+查看全部订单     >
+</text>
+</view>
+  <view class="my_list">
+    <view data-currentTab="1" bindtap="mylogistics">
+      <icon class="iconfont icon-daifukuan"></icon>
+      <text>待付款</text>
+    </view>
+    <view data-currentTab="2" bindtap="mylogistics">
+      <icon class="iconfont icon-daifahuo"></icon>
+      <text>待发货</text>
+    </view>
+    <view data-currentTab="3" bindtap="mylogistics">
+      <icon class="iconfont icon-daishouhuofuben"></icon>
+      <text>待收货</text>
+    </view>
+    <view bindtap="myaddress">
+      <icon class="iconfont icon-shouhuodizhi"></icon>
+      <text>收货地址</text>
+    </view>
+    <view bindtap="myrefund">
+      <icon class="iconfont icon-tuihuotuikuan"></icon>
+      <text>售后退款</text>
+    </view>
+  </view>
+
+
+<view class="bottom">
+  <view bindtap="mycollect">
+    <view class="b1">
+      <icon class="iconfont icon-wodeshoucang"></icon>
+    </view>
+    <text>我的收藏</text>
+  </view>
+   <view bindtap="myhistory">
+    <view class="b2">
+      <icon class="iconfont icon-lishi"></icon>
+    </view>
+    <text>我的历史</text>
+  </view>
+  <view  data-phonenum="17367949362" bindtap="call">
+    <view class="b3">
+      <icon class="iconfont icon-wode-lianxikefu"></icon>
+    </view>
+    <text>联系客服</text>
+  </view>
+  <view bindtap="myaboutus">
+    <view class="b4" >
+      <icon class="iconfont icon-guanyuwomen"></icon>
+    </view>
+    <text>关于我们</text>
+  </view>
+  <view bindtap="myJoinus">
+    <view class="b5">
+      <icon class="iconfont icon-jiameng"></icon>
+    </view>
+    <text>加盟我们</text>
+  </view>
+</view>

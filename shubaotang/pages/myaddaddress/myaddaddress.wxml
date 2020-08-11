@@ -1,0 +1,29 @@
+<form bindsubmit="addsubmit">
+  <view class="addaddress">
+      <view class="add">
+        <text>收货人：</text>
+        <input type="text" placeholder="请输入姓名" name="consignee"></input>
+      </view>
+      <view class="add">
+        <text>手机号码：</text>
+        <input type="text" placeholder="请输入手机号码" name="phonenumber"></input>
+      </view>
+      <picker mode="multiSelector" bindchange="bindRegionChange" bindcolumnchange="bindRegionColumnChange" range='{{multiArray}}'>
+       <view class="add">
+        <text>所在地区：</text>
+        <input type="text" placeholder="请选择所在区域" name="location" value="{{addressCity[0]}}   {{addressCity[1]}}   {{addressCity[2]}}" disabled wx:if="{{addressCity}}"></input>       
+        <text wx:else class='placeholder'>请选择地区</text>
+       </view>
+      </picker> 
+      <view class="address">
+        <textarea type="textarea" placeholder="详细地址：如街道、门牌号、小区、楼栋号、单元室等" name="detailedregion"></textarea>
+      </view>
+      <view>
+ 
+</view>
+
+  </view>
+  <button class="buttons" form-type="submit">
+    保存地址
+  </button>
+</form>

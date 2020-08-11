@@ -1,0 +1,66 @@
+page{
+  background:#efefef; 
+}
+.message text {
+  color: #666;
+}
+.myaddress{
+  padding: 29rpx;
+  margin: 0 auto;
+background: white;
+margin-bottom: 25rpx;
+}
+.message {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.messageshow{
+  padding: 30rpx 0;
+  padding-top: 0;
+  border-bottom:2rpx solid #f5f5f5;
+}
+.address {
+  color: #666;
+}
+.selectaddress view image {
+  width: 34rpx;
+  height: 34rpx;
+}
+.selectaddress {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15rpx 0;
+  padding-bottom: 0;
+}
+.operation {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.defultress{
+  display: flex;
+  align-items: center;
+}
+.noselectress {
+  color: #666;
+}
+.selectress{
+  color:#D81E06
+}
+.operation view{
+  margin-left: 30rpx;
+}
+.operation view text {
+  color: #666;
+}
+.buttons:not([size='mini']) {
+  width: 100%;
+  background: #037D6E;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}

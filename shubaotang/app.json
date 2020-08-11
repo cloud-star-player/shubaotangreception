@@ -1,0 +1,70 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/myaddaddress/myaddaddress",
+        "pages/ceshi/ceshi",
+        
+        "pages/goodsdetails/goodsdetails",
+        "pages/cart/cart",
+        "pages/search/search",
+        "pages/classgoodslist/classgoodslist",
+        "pages/myaddress/myaddress",
+        
+        "pages/my/my",
+        "pages/myJoinus/myJoinus",
+        "pages/myaboutus/myaboutus",
+        "pages/myhistory/myhistory",
+        "pages/mycollect/mycollect",
+        "pages/network/network",
+        "pages/myrefund/myrefund",
+        "pages/auction/auction",
+        "pages/mylogistics/mylogistics",
+        "pages/classification/classification",
+        "pages/logs/logs",
+        "pages/pay/pay"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "backgroundColor": "while",
+        "color": "#434944",
+        "selectedColor": "#000000",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "pages/images/bar/index2.png",
+                "selectedIconPath": "pages/images/bar/index1.png"
+            },
+            {
+                "pagePath": "pages/classification/classification",
+                "text": "分类",
+                "iconPath": "pages/images/bar/classification2.png",
+                "selectedIconPath": "pages/images/bar/classification1.png"
+            },
+            {
+                "pagePath": "pages/auction/auction",
+                "text": "拍卖",
+                "iconPath": "pages/images/bar/auction2.png",
+                "selectedIconPath": "pages/images/bar/auction1.png"
+            },
+            {
+                "pagePath": "pages/cart/cart",
+                "text": "购物车",
+                "iconPath": "pages/images/bar/cart2.png",
+                "selectedIconPath": "pages/images/bar/cart1.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "个人中心",
+                "iconPath": "pages/images/bar/my2.png",
+                "selectedIconPath": "pages/images/bar/my1.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

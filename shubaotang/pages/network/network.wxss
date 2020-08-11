@@ -1,0 +1,29 @@
+.im1 {
+    width: 263rpx;
+    height: 263rpx;
+    border-radius: 50%;
+    margin-bottom:50rpx;
+  }
+  
+  .im2 {
+    width: 51rpx;
+    height: 21rpx;
+    margin-top:50rpx;
+    margin: 0 auto; 
+    margin-bottom:40rpx;
+  }
+  
+  text {
+    color: #c1c1c1;
+    margin: 0 auto; 
+  }
+  
+  view {
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

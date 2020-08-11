@@ -1,0 +1,31 @@
+<view class="top_b" style="height:{{jnobj.top}}px;background: white;"></view>
+<view style="height:{{jnobj.height}}px;background:white;"></view>
+<view class="top">
+    <view class="left"><icon class="iconfont icon-fanhui2" bindtap="fanhui"/></view>
+	<view class="center">
+		<text>我的收藏</text>
+	</view>
+	<view class="right">
+		<text class="guanli" wx:if="{{select}}" bindtap="guanli">管理</text>
+		<text class="quxiao" style="color:#efefef;margin-right:20rpx;" wx:if="{{!select}}" bindtap="quxiao">取消</text>
+		<text class="shanchu" style="color:red" wx:if="{{!select}}" bindtap="shanchu">删除</text>
+	</view>
+</view>
+<scroll-view scroll-y style="height:{{swiperheight2}}px;" bindscrolltolower="loadMore2">
+	<view class="collectlist">
+		<view class="collect">
+			<view class="collectitem" wx:for="{{shoplist}}" wx:key="index" wx:for-item="shoplist">
+				<view class="collectcnt">
+				<image class="cartsselect"  data-index="{{index}}" src="{{item.isSelect?'../images/cart/select.png':'../images/cart/n_select.png'}}" wx:if="{{!select}}"/>
+					<image class="collectimage" src="{{shoplist.image}}" />
+					<view class="collectinfo">
+						<text class="collecttitle">{{shoplist.title}}</text>
+						<view class="collectsubtitle">
+							<text class="price">￥{{shoplist.price}}</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>

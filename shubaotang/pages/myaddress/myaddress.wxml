@@ -1,0 +1,29 @@
+<view class="myaddress" wx:for="{{carts}}" wx:item='item'>
+  <view class="messageshow">
+    <view class="message">
+      <text>收货人：{{item.consignee}}</text>
+      <text>{{item.phonenumber}}</text>
+    </view>
+    <text class="address">收货地址：{{item.location}}{{item.detailedregion}}</text>
+  </view>
+  <view class="selectaddress">
+    <view class="defultress">
+      <image bindtap="select" data-index="{{index}}" src="{{item.isSelect?'../images/cart/select.png':'../images/cart/n_select.png'}}" />
+      <text wx:if="{{item.isSelect==0}}" class="noselectress">默认地址</text>
+      <text wx:else class="selectress">默认地址</text>
+    </view>
+    <view class="operation">
+      <view>
+        <icon class="iconfont icon-bianji"></icon>
+        <text>编辑</text>
+      </view>
+      <view bindtap="delete" id="delete" data-index="{{item.id}}">
+        <icon class="iconfont icon-iconfontshanchu5"></icon>
+        <text>删除</text>
+      </view>
+    </view>
+  </view>
+</view>
+<button class="buttons" bindtap="add">
+  添加新地址
+</button>

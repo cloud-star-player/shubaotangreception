@@ -1,0 +1,162 @@
+.swiper-tab {
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #777;
+  width: 100%;
+  position: fixed;top: 0;
+}
+
+.tab-item {
+  width: 33.3%;
+  text-align: center;
+  font-size: 23rpx;
+  color: #777;
+  background: white;
+}
+.on {
+  color: #037D6E;
+  background: white;
+  border-bottom: 5rpx solid #037D6E;
+}
+/**   * 导航页面显示   */
+.swiper {
+  margin-top:90rpx ;
+  background: #efefef;
+  
+}
+.swiper-item{
+}
+
+/**
+内容
+*/
+
+/*
+待付款使用
+*/
+
+.pay {
+  background: white;
+  margin-bottom: 30rpx;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.price {
+  color: #f60;
+}
+
+.num {
+  color: #989699;
+}
+
+.paycnt {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paysubtitle {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.paytitle {
+  margin: 0 auto;
+  word-break: break-all;
+  width: 350rpx;
+  font-size: 23rpx;
+}
+
+
+.paylist {
+  padding: 0 20rpx;
+}
+
+.paylist .payitem {
+  border-radius: 2rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 10rpx;
+  width: 100%;
+  position: relative;
+}
+
+.payitem:nth-child(1) {
+  border-top: 0;
+}
+
+.payitem .paycnt {
+  flex: 1;
+  padding: 0 20rpx;
+}
+
+.paycnt .payimage {
+  float: left;
+  margin-right: 20rpx;
+  width: 164rpx;
+  height: 164rpx;
+}
+
+.payinfo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+}
+
+.paytitle {
+  font-size: 25rpx;
+}
+.paybutton{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.paytotal{
+  padding-top:30rpx;
+  padding-bottom: 30rpx;
+  margin-right: 36rpx;
+}
+.button{
+  margin-right:12rpx;
+  padding-top:30rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.button view{
+  margin-right:12rpx;
+  width:150rpx;
+  text-align: center;
+  border-radius: 2rem;
+}
+.button view text{
+  font-size: 24rpx;
+  line-height: 80rpx;
+}
+.buttonown{
+  border: 1rpx solid #A9A6AA;
+  border-radius: 4rpx;
+  background: white;
+}
+.buttonown text{
+  color: #7A777B;
+}
+.buttontwo{
+  border: 1rpx solid #037D6E;
+  border-radius: 4rpx;
+  background: #037D6E;
+}
+.buttontwo text{
+  color: white;
+}

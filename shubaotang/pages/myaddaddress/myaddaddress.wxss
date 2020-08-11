@@ -1,0 +1,30 @@
+page{
+  background:#efefef; 
+}
+.addaddress{
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+}
+.add{
+  margin: 0 10rpx;
+  padding: 20rpx 0;
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom:2rpx solid #f0f0f0; 
+  color:#999999;
+}
+.add text{
+  color:#999999;
+}
+.address{
+ margin: 0 10rpx;
+ padding: 20rpx 0;
+}
+.buttons:not([size='mini']) {
+  width: 100%;
+  background: #037D6E;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}

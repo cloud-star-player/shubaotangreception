@@ -1,0 +1,92 @@
+<!--pages/mylogistics/mylogistics.wxml-->
+<view class="swiper-tab">
+	<view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+	<view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">待付款</view>
+	<view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">待发货</view>
+	<view class="tab-item {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">待收货</view>
+</view>
+<swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" style="height:{{swiperheight2}}px;">
+	<swiper-item class="swiper-item">
+	</swiper-item>
+	<swiper-item class="swiper-item">
+		<scroll-view scroll-y style="height:{{swiperheight2}}px;" bindscrolltolower="loadMore2">
+			<view class="paylist">
+				<view class="pay" wx:for="{{payorder}}" wx:key="index" wx:for-item="payorder">
+					<view class="payitem" wx:for="{{shoplist}}" wx:key="index"wx:for-item="shoplist"  wx:if="{{shoplist.id==payorder.id}}">
+						<view class="paycnt">
+							<image class="payimage" src="{{shoplist.image}}" />
+							<view class="payinfo">
+								<text class="paytitle">{{shoplist.title}}</text>
+								<view class="paysubtitle">
+									<text class="price">￥{{shoplist.price}}</text>
+									<text class="num">x {{shoplist.num}}</text>
+								</view>
+							</view>
+						</view>
+					</view>
+					<view class="paybutton">
+						<text class="paytotal">共12件  应付总额:<text style="color:#f60;">￥12.00</text></text>
+						<view class="button">
+							<view class="buttonown"><text>取消定单</text></view>
+							<view class="buttontwo"><text>立即付款</text></view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</swiper-item>
+	<swiper-item class="swiper-item">
+	<scroll-view scroll-y style="height:{{swiperheight2}}px;" bindscrolltolower="loadMore2">
+			<view class="paylist">
+				<view class="pay" wx:for="{{payorder}}" wx:key="index" wx:for-item="payorder">
+					<view class="payitem" wx:for="{{shoplist}}" wx:key="index"wx:for-item="shoplist"  wx:if="{{shoplist.id==payorder.id}}">
+						<view class="paycnt">
+							<image class="payimage" src="{{shoplist.image}}" />
+							<view class="payinfo">
+								<text class="paytitle">{{shoplist.title}}</text>
+								<view class="paysubtitle">
+									<text class="price">￥{{shoplist.price}}</text>
+									<text class="num">x {{shoplist.num}}</text>
+								</view>
+							</view>
+						</view>
+					</view>
+					<view class="paybutton">
+						<text class="paytotal">共12件  应付总额:<text style="color:#f60;">￥12.00</text></text>
+						<view class="button">
+							<view class="buttontwo"><text>提醒发货</text></view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</swiper-item>
+	<swiper-item class="swiper-item">
+	<scroll-view scroll-y style="height:{{swiperheight2}}px;" bindscrolltolower="loadMore2">
+			<view class="paylist">
+				<view class="pay" wx:for="{{payorder}}" wx:key="index" wx:for-item="payorder">
+					<view class="payitem" wx:for="{{shoplist}}" wx:key="index"wx:for-item="shoplist"  wx:if="{{shoplist.id==payorder.id}}">
+						<view class="paycnt">
+							<image class="payimage" src="{{shoplist.image}}" />
+							<view class="payinfo">
+								<text class="paytitle">{{shoplist.title}}</text>
+								<view class="paysubtitle">
+									<text class="price">￥{{shoplist.price}}</text>
+									<text class="num">x {{shoplist.num}}</text>
+								</view>
+							</view>
+						</view>
+					</view>
+					<view class="paybutton">
+						<text class="paytotal">共12件  应付总额:<text style="color:#f60;">￥12.00</text></text>
+						<view class="button">
+						    <view class="buttonown"><text>延长收货</text></view>
+							<view class="buttonown"><text>查看物流</text></view>
+							<view class="buttontwo"><text>确认收获</text></view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</swiper-item>
+</swiper>

@@ -1,0 +1,31 @@
+<import src="../template/top.wxml" />
+<view bindtap="tosearch">
+<template is="input"></template>
+</view>
+<!-- 搜索框 -->
+<swiper class="banner" autoplay indicator-dots indicator-color="#fff" indicator-active-color="#406565">
+	<swiper-item wx:for="{{banner_list}}">
+		<image src="{{item}}"></image>
+	</swiper-item>
+</swiper>
+<view class="coupon">
+	<view>
+		<view class="coupon_left">
+			<text class="coupon_t1">￥</text>
+			<text class="coupon_t2">10</text>
+		</view>
+		<view class="coupon_right">
+			<text class="coupon_t3">优惠券</text>
+			<text class="coupon_t4">满100可用</text>
+			<button class="coupon_click">
+				点击领取>
+			</button>
+		</view>
+	</view>
+</view>
+<view class="recommend">
+  精选推荐
+</view>
+<view class="recommend_text">
+  <image src="{{item}}" class="recommend_img"  wx:for="{{recommend}}"></image>
+</view>

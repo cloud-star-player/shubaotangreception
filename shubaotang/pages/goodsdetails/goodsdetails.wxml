@@ -1,0 +1,75 @@
+<import src="../template/top2.wxml" />
+
+
+<swiper class="banner" autoplay indicator-dots indicator-color="#fff" indicator-active-color="#406565">
+  <swiper-item wx:for="{{banner_list}}">
+    <image src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+<view class="top">
+<view class="title">
+  <text>园茗园 安溪特级铁观音茶叶浓香型2019新茶春茶铁观音500g礼盒装</text>
+  <view class="t_price">
+    <text class="price_one">￥386.00</text>
+    <text class="price_two">原价:<text>￥1158.00</text></text>
+    <text class="price_three">销量：123 件</text>
+  </view>
+  <view class="t_location">
+    <text class="t_location_t1">发货</text>
+    <icon class="iconfont icon-location"></icon>
+    <text class="t_location_t2">福建泉州 <text>|</text> 快递：0.00</text>
+  </view>
+  <view class="t_bottom">
+    <view>
+      <icon class="iconfont icon-duihaocheckmark17"></icon>
+      <text>正品保障</text>
+    </view>
+    <view>
+      <icon class="iconfont icon-duihaocheckmark17"></icon>
+      <text>极速保障</text>
+    </view>
+  </view>
+</view>
+</view>
+<view class="detailtext">
+  商品详情
+</view>
+<image src="../images/goodsdetails/fenleidetails_05.jpg" alt="" class="detailimg"></image>
+<template is="tfooter" data="{{shoucang}}">
+</template>
+
+
+<view class='mask-layer' wx:if="{{showPop}}" bindtap='hideModal'></view>
+<view class='pop-common' wx:if="{{showPop}}" animation='{{animationData}}'>
+<view class="midden">
+  <image src="../images/goodsdetails/fenleidetails_02.jpg"></image>
+  <view class="middenc">
+    <view class="pas">
+      <text class="price">￥386.00</text>
+      <text class="stock">库存:8520件</text>
+    </view>
+    <icon class="iconfont icon-fork"></icon>
+  </view>
+</view>
+<view class="banner_buffer"></view>
+<view class="title">
+  规格
+</view>
+<view class="default">
+  <view>
+    默认
+  </view>
+</view>
+<view>
+  <view class="title">
+    数量
+  </view>
+  <view class="adds">
+    <view class="add">
+      <text bindtap="bindMinus">-</text>
+      <input type="text" name="price" value="{{shop.num}}" disabled></input>
+      <text bindtap="bindPlus">+</text>
+    </view>
+  </view>
+</view>
+</view>
